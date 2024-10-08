@@ -1,0 +1,10 @@
+* {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+button, input{
+    border-radius: 8px;
+    border-color: #ffffff;
+    border-style: solid;
+}
