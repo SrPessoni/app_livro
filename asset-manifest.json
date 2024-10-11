@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/app_livro/static/css/main.79dba0f1.css",
+    "main.js": "/app_livro/static/js/main.f11baecd.js",
+    "index.html": "/app_livro/index.html",
+    "main.79dba0f1.css.map": "/app_livro/static/css/main.79dba0f1.css.map",
+    "main.f11baecd.js.map": "/app_livro/static/js/main.f11baecd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79dba0f1.css",
+    "static/js/main.f11baecd.js"
+  ]
+}
