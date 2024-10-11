@@ -24,7 +24,7 @@ function App() {
     const [tema, setTema] = useState('claro');
 
     const alternarTema = () => {
-        setTema(prevTema => (prevTema === 'claro' ? 'escuro' : 'claro'));
+      setTema(prevTema => (prevTema === 'claro' ? 'escuro' : 'claro'));
     };
 
     // UseEffect para ajustar a classe do body
