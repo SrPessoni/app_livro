@@ -1,27 +1,37 @@
+// Components/DeletarLivros.js
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
-const removerLivro = (id) => {
-  return {
-    type: 'remover',
-    payload: id,
-  };
-};
-
 const DeletarLivros = () => {
-  const livros = useSelector((state) => state); // Supondo que o reducer retorna um array de livros
-  const dispatch = useDispatch();
+    const dispatch = useDispatch();
+    const livros = useSelector(state => state);
 
-  return (
-    <ul>
-      {livros.map((livro) => (
-        <li key={livro.id}>
-          {livro.titulo}
-          <button onClick={() => dispatch(removerLivro(livro.id))}>Remover</button>
-        </li>
-      ))}
-    </ul>
-  );
+    const removerLivro = (id) => {
+        dispatch({ type: 'remover', payload: id });
+    };
+
+    return (
+        <div>
+            <h2>Lista de Livros</h2>
+            {livros.length === 0 ? (
+                <p>Nenhum livro encontrado.</p>
+            ) : (
+                <ul>
+                    {livros.map(livro => (
+                        <li key={livro.id}>
+                            {livro.titulo} 
+                            <button className='btn-remover' onClick={() => removerLivro(livro.id)}>
+                              <i className='bx bxs-trash'></i>Remover
+                            </button>
+                        </li>
+                    ))}
+                </ul>
+            )}
+        </div>
+    );
 };
+
+//                 <button className="btn-remover" onClick={() => removerLivro(livro.id)}>
+{/* <i className='bx bxs-trash'></i>Remover */}
 
 export default DeletarLivros;
