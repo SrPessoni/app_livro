@@ -1,7 +1,7 @@
 /* AppClaro.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #e4e4e4;
     color: #333;
     margin: 0;
     padding: 20px;
@@ -89,7 +89,8 @@ li {
 }
 
 .dark-mode li{
-    color: #333;
+    background-color: #444;
+    color: #fff;
 }
 
 .temaApp {
@@ -102,7 +103,6 @@ li {
     font-size: 16px;
     margin-right: 5px;
 }
-
 
 .dark-mode .temaApp{
     background-color: #fff;
